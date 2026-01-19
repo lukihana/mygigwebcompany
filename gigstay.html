@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigStay - ระบบบริหารจัดการ Pool Villa และ Boutique Hotel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Prompt', sans-serif; }
+        .gradient-hero { background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%); }
+        .price-card:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="text-slate-800 bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition">
+                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">mG</div>
+                    <span class="font-bold text-2xl text-blue-900">myGig</span>
+                </a>
+                <a href="#pricing" class="px-5 py-2 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition shadow-lg shadow-orange-500/30 font-medium">ดูแพ็กเกจราคา</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 gradient-hero">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 text-orange-700 font-medium text-sm mb-6 border border-orange-200">
+                <i data-lucide="flag" class="w-4 h-4"></i>
+                Digitalizing Thai Hospitality Operations
+            </div>
+            <h1 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+                ระบบบริหารจัดการ Pool Villa & Hotel<br>
+                <span class="text-orange-600">ที่เข้าใจคนไทยที่สุด</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
+                บอกลา Excel และสมุดจด ลดเวลา Check-in จาก 10 นาที เหลือเพียง 5 นาที <br>
+                ป้องกัน Overbooking 100% พร้อมแอปฯ สำหรับแม่บ้านโดยเฉพาะ
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="px-8 py-4 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition shadow-xl shadow-orange-500/20 flex items-center justify-center gap-2">
+                    ขอ Demo ระบบฟรี <i data-lucide="monitor-play" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pain Points (Why Change?) -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">คุณกำลังเจอปัญหาเหล่านี้อยู่ไหม?</h2>
+                <p class="text-slate-500 mt-2">ความเสี่ยงของการบริหารจัดการด้วยมือ (Manual)</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 border border-red-100 bg-red-50 rounded-2xl">
+                    <i data-lucide="alert-triangle" class="w-10 h-10 text-red-500 mx-auto mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Overbooking & รายได้หาย</h3>
+                    <p class="text-sm text-slate-600">รับจองซ้อนจากหลายช่องทาง ข้อมูลตกหล่น ทำให้เสียโอกาสและเสียชื่อเสียง</p>
+                </div>
+                <div class="p-6 border border-red-100 bg-red-50 rounded-2xl">
+                    <i data-lucide="file-x" class="w-10 h-10 text-red-500 mx-auto mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">ข้อมูลล่าช้า & ผิดพลาด</h3>
+                    <p class="text-sm text-slate-600">เจ้าของไม่รู้สถานะห้องแบบ Real-time พนักงานลงข้อมูลซ้ำซ้อน (Double Entry)</p>
+                </div>
+                <div class="p-6 border border-red-100 bg-red-50 rounded-2xl">
+                    <i data-lucide="clipboard-x" class="w-10 h-10 text-red-500 mx-auto mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">คุมคุณภาพแม่บ้านยาก</h3>
+                    <p class="text-sm text-slate-600">ใช้กระดาษ Checklist ตามงานยาก ไม่รู้ว่าห้องเสร็จจริงหรือยัง</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">GigStay คือคำตอบ</h2>
+                <p class="text-slate-500 mt-2">ออกแบบมาเพื่อตลาดไทย ใช้งานง่าย เริ่มต้นได้ทันที</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+                        <i data-lucide="layout-dashboard" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">All-in-One Dashboard</h4>
+                    <p class="text-slate-600 text-sm">ดูสถานะห้อง (Room Status), การจอง, และรายได้แบบ Real-time ในหน้าจอเดียว</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 mb-4">
+                        <i data-lucide="smartphone" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">Housekeeper Mobile App</h4>
+                    <p class="text-slate-600 text-sm">แอปฯ สำหรับแม่บ้าน อัปเดตสถานะห้อง (สะอาด/ไม่สะอาด) ได้ทันที ลดการใช้กระดาษ</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 mb-4">
+                        <i data-lucide="languages" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">Thai-first Design</h4>
+                    <p class="text-slate-600 text-sm">เมนูภาษาไทย ออกแบบ UX มาให้คนไทยใช้งานง่าย ไม่ต้องเก่งไอทีก็ใช้เป็น</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-4">
+                        <i data-lucide="file-check" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">Booking & Receipt</h4>
+                    <p class="text-slate-600 text-sm">จัดการ Booking ง่าย ออกใบเสร็จรับเงินได้ถูกต้อง ลดความผิดพลาดงานเอกสาร</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center text-pink-600 mb-4">
+                        <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">Real-time Sync</h4>
+                    <p class="text-slate-600 text-sm">ข้อมูลเชื่อมตรงกันหมดระหว่าง Front Desk, แม่บ้าน และเจ้าของกิจการ</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center text-cyan-600 mb-4">
+                        <i data-lucide="cloud-lightning" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">Fast Implementation</h4>
+                    <p class="text-slate-600 text-sm">ติดตั้งและเริ่มใช้งานได้ภายใน 1-2 วัน ทีมซัพพอร์ตไทยดูแลตลอด</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">แพ็กเกจราคาที่คุ้มค่า</h2>
+                <p class="text-slate-500 mt-2">รวม Cloud Hosting และอัปเดตระบบฟรีตลอดอายุการใช้งาน</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 items-start">
+                
+                <!-- Starter Tier -->
+                <div class="border border-slate-200 rounded-3xl p-8 hover:shadow-xl transition duration-300 price-card bg-white">
+                    <h3 class="text-xl font-bold text-slate-900">Starter</h3>
+                    <div class="mt-4 flex items-baseline text-slate-900">
+                        <span class="text-4xl font-bold tracking-tight">฿1,500</span>
+                        <span class="ml-1 text-xl font-semibold text-slate-500">/เดือน</span>
+                    </div>
+                    <p class="mt-2 text-sm text-slate-500">เหมาะสำหรับ 1-3 วิลล่า</p>
+
+                    <ul class="mt-8 space-y-4 text-sm text-slate-600">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                            <span>Booking Dashboard</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                            <span>Room Status Real-time</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                            <span>2 Staff Users</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                            <span>Housekeeper Mobile App</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                            <span>Multi-property Support</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="mt-8 block w-full bg-slate-100 text-slate-800 text-center py-3 rounded-xl font-bold hover:bg-slate-200 transition">
+                        เลือกแพ็กเกจนี้
+                    </a>
+                </div>
+
+                <!-- Professional Tier (Highlight) -->
+                <div class="border-2 border-orange-500 relative rounded-3xl p-8 shadow-2xl scale-105 bg-white z-10">
+                    <div class="absolute top-0 right-0 -mt-4 mr-4 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg">
+                        ขายดีที่สุด
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Professional</h3>
+                    <div class="mt-4 flex items-baseline text-slate-900">
+                        <span class="text-4xl font-bold tracking-tight">฿3,500</span>
+                        <span class="ml-1 text-xl font-semibold text-slate-500">/เดือน</span>
+                    </div>
+                    <p class="mt-2 text-sm text-slate-500">เหมาะสำหรับ 4-10 วิลล่า</p>
+
+                    <ul class="mt-8 space-y-4 text-sm text-slate-600">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-orange-500"></i>
+                            <span class="font-bold">ทุกฟีเจอร์ใน Starter</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                            <span><strong>Unlimited</strong> Users</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                            <span>Housekeeper Mobile App</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                            <span>Reporting & Analytics เชิงลึก</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                            <span>Priority Support (ดูแลพิเศษ)</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="mt-8 block w-full bg-orange-500 text-white text-center py-3 rounded-xl font-bold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30">
+                        เลือกแพ็กเกจนี้
+                    </a>
+                </div>
+
+                <!-- Enterprise Tier -->
+                <div class="border border-slate-200 rounded-3xl p-8 hover:shadow-xl transition duration-300 price-card bg-slate-50">
+                    <h3 class="text-xl font-bold text-slate-900">Enterprise</h3>
+                    <div class="mt-4 flex items-baseline text-slate-900">
+                        <span class="text-3xl font-bold tracking-tight">Custom</span>
+                    </div>
+                    <p class="mt-2 text-sm text-slate-500">สำหรับ 10+ วิลล่า หรือเครือโรงแรม</p>
+
+                    <ul class="mt-8 space-y-4 text-sm text-slate-600">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-slate-400"></i>
+                            <span>ทุกฟีเจอร์ใน Professional</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-slate-800"></i>
+                            <span>Multi-property Management</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-slate-800"></i>
+                            <span>API Integration</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-slate-800"></i>
+                            <span>Dedicated Account Manager</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-slate-800"></i>
+                            <span>On-site Training (สอนถึงที่)</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="mt-8 block w-full bg-slate-800 text-white text-center py-3 rounded-xl font-bold hover:bg-slate-900 transition">
+                        ติดต่อฝ่ายขาย
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tax Benefits (Value Add) -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+             <div class="inline-block px-4 py-1 bg-yellow-400 text-blue-900 font-bold rounded-full text-sm mb-4">สิทธิพิเศษ!</div>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">ลดหย่อนภาษีได้สูงสุดถึง 200%</h2>
+            <p class="text-blue-100 max-w-3xl mx-auto">
+                GigStay เป็นซอฟต์แวร์ที่ขึ้นทะเบียนถูกต้อง ผู้ประกอบการสามารถนำค่าใช้จ่ายไปหักลดหย่อนภาษีได้ตามมาตรการส่งเสริม SME ของภาครัฐ ออกใบกำกับภาษีถูกต้อง 100%
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">เริ่มต้นยกระดับโรงแรมของคุณวันนี้</h2>
+            <p class="text-slate-600 mb-8">ปรึกษาเราเพื่อรับข้อเสนอพิเศษ หรือนัดหมายสาธิตระบบ (Demo) ฟรี</p>
+            
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 mb-8 max-w-md mx-auto">
+                <p class="font-bold text-lg mb-4">ติดต่อทีมงาน GigStay</p>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-center gap-2 text-slate-700">
+                        <i data-lucide="user" class="w-5 h-5 text-blue-600"></i>
+                        <span>คุณวิมลรัตน์ ไพโรจน์ (ลูกไก่)</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-2 text-slate-700">
+                        <i data-lucide="phone" class="w-5 h-5 text-blue-600"></i>
+                        <a href="tel:0946924653" class="hover:text-blue-600 font-bold">094-692-4653</a>
+                    </div>
+                    <div class="flex items-center justify-center gap-2 text-slate-700">
+                        <i data-lucide="mail" class="w-5 h-5 text-blue-600"></i>
+                        <a href="mailto:pwimonrat@live.com" class="hover:text-blue-600">pwimonrat@live.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://line.me/ti/p/@myGigCompany" class="flex items-center justify-center gap-2 px-8 py-4 bg-green-500 text-white rounded-xl font-bold hover:bg-green-600 transition shadow-lg shadow-green-500/20">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    ทักไลน์คุยกับเรา
+                </a>
+                <a href="index.html" class="flex items-center justify-center gap-2 px-8 py-4 bg-slate-100 text-slate-600 rounded-xl font-bold hover:bg-slate-200 transition">
+                    กลับหน้าหลัก
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-slate-50 border-t border-slate-200 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 myGig Company. All rights reserved.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
