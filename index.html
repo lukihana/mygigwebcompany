@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myGig Company - เพื่อนคู่คิดทางธุรกิจ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+    </style>
+</head>
+<body class="text-slate-800 bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">mG</div>
+                    <span class="font-bold text-2xl text-blue-900">myGig</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition">เกี่ยวกับเรา</a>
+                    <a href="#services" class="text-slate-600 hover:text-blue-600 font-medium transition">บริการที่ปรึกษา & อบรม</a>
+                    <a href="#products" class="text-slate-600 hover:text-blue-600 font-medium transition">Software Products</a>
+                    <a href="#contact" class="px-5 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition shadow-lg shadow-blue-600/30">ติดต่อเรา</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-600 hover:text-blue-600 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden gradient-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium text-sm mb-6">
+                    <i data-lucide="handshake" class="w-4 h-4"></i>
+                    Partnership & Professional
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+                    มากกว่าผู้ให้บริการ <br>
+                    คือ <span class="text-blue-600">"เพื่อนคู่คิด"</span> ที่จริงใจ
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
+                    เราสร้างความสบายใจให้ทั้งคนทำงานและผู้รับผลงาน ด้วยความโปร่งใส ชัดเจน และตรงไปตรงมา พร้อมยกระดับธุรกิจของคุณด้วยมาตรฐานสากลและเทคโนโลยีที่ทันสมัย
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#services" class="px-8 py-4 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition shadow-xl shadow-blue-600/20 flex items-center justify-center gap-2">
+                        ดูบริการของเรา <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#products" class="px-8 py-4 rounded-full bg-white text-blue-600 border-2 border-blue-100 font-semibold hover:border-blue-600 hover:bg-blue-50 transition flex items-center justify-center gap-2">
+                        รู้จัก GigStay & HR Talent
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative blobs -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-cyan-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 translate-x-1/3 translate-y-1/3"></div>
+    </header>
+
+    <!-- Philosophy / Values Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">ทำไมต้อง myGig Company?</h2>
+                <div class="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="p-8 rounded-2xl bg-white border border-slate-100 shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center text-green-600 mb-6">
+                        <i data-lucide="heart-handshake" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">เพื่อนคู่คิด (Partner)</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        เราทำงานร่วมกับคุณเหมือนเพื่อนที่หวังดี ไม่ใช่แค่ Vendor ทั่วไป เราเน้นความสบายใจ การสื่อสารที่เข้าใจง่าย และพร้อมเคียงข้างแก้ปัญหาไปด้วยกัน
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="p-8 rounded-2xl bg-white border border-slate-100 shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6">
+                        <i data-lucide="search-check" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">โปร่งใส ตรงไปตรงมา</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        ชัดเจนตั้งแต่ตกลงเริ่มงานจนถึงส่งมอบงาน ไม่มีเงื่อนไขซ่อนเร้น ตรวจสอบได้ทุกขั้นตอน เพื่อความแฟร์และความสัมพันธ์ทางธุรกิจที่ยั่งยืน
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="p-8 rounded-2xl bg-white border border-slate-100 shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mb-6">
+                        <i data-lucide="award" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">มาตรฐานระดับสากล</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        ด้วยประสบการณ์จาก Certify Body เรานำมาตรฐาน ISO และ Process Improvement มาประยุกต์ใช้ เพื่อให้ธุรกิจของคุณเติบโตอย่างมีระบบและมั่นคง
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">บริการที่ปรึกษา & การอบรม</h2>
+                    <p class="text-slate-600 text-lg max-w-2xl">ยกระดับศักยภาพองค์กรและบุคลากร ด้วยความเชี่ยวชาญเฉพาะด้าน</p>
+                </div>
+                <a href="#contact" class="hidden md:flex text-blue-600 font-semibold hover:text-blue-700 items-center gap-2">
+                    สอบถามรายละเอียด <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Consulting -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+                    <div class="flex items-start gap-6">
+                        <div class="shrink-0 w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600">
+                            <i data-lucide="briefcase" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Business Consulting & ISO</h3>
+                            <ul class="space-y-3 text-slate-600">
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500"></i>
+                                    <span>ที่ปรึกษาด้าน <strong>Process Improvement</strong> ปรับปรุงกระบวนการทำงานให้ลื่นไหล ลดความสูญเสีย</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500"></i>
+                                    <span>มาตรฐาน <strong>ISO</strong> (9001, 14001, etc.) โดยผู้เชี่ยวชาญจาก Certify Body</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500"></i>
+                                    <span>วิเคราะห์ปัญหาธุรกิจอย่างตรงจุด พร้อมแนวทางแก้ไขที่ทำได้จริง</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+                    <div class="flex items-start gap-6">
+                        <div class="shrink-0 w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-pink-600">
+                            <i data-lucide="graduation-cap" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Professional Training</h3>
+                            <ul class="space-y-3 text-slate-600">
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500"></i>
+                                    <span>การใช้งานระบบ <strong>ERP</strong> เพื่อการบริหารทรัพยากรองค์กรอย่างมีประสิทธิภาพ</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500"></i>
+                                    <span>หลักสูตร <strong>บัญชีและการเงิน</strong> สำหรับผู้บริหารและพนักงาน</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500"></i>
+                                    <span>การอบรมข้อกำหนดและมาตรฐาน <strong>ISO</strong> ต่างๆ</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-blue-900 text-white relative overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-blue-800/30 transform skew-x-12"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-blue-300 font-semibold tracking-wider uppercase text-sm">Our Innovation</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">Software Products</h2>
+                <p class="text-blue-100 text-lg max-w-2xl mx-auto">โซลูชันซอฟต์แวร์ที่เราพัฒนาขึ้นจากความเข้าใจในปัญหาของผู้ใช้งานจริง ใช้งานง่าย และตอบโจทย์</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- GigStay -->
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition duration-300 group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-orange-500 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-orange-500/30 group-hover:scale-110 transition duration-300">
+                            <i data-lucide="home" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold">GigStay</h3>
+                    </div>
+                    <p class="text-blue-100 mb-6 leading-relaxed min-h-[80px]">
+                        ระบบจัดการที่พักอาศัยครบวงจร สำหรับโรงแรม (Hotel), โฮมสเตย์ (Homestay) และ พูลวิลล่า (Pool Villa) จัดการจอง เช็คอิน และดูรายได้ ได้ในที่เดียว
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3 py-1 rounded-full bg-white/20 text-sm text-white">Booking Engine</span>
+                        <span class="px-3 py-1 rounded-full bg-white/20 text-sm text-white">Channel Manager</span>
+                        <span class="px-3 py-1 rounded-full bg-white/20 text-sm text-white">Reports</span>
+                    </div>
+                    <button class="w-full py-3 bg-white text-blue-900 rounded-xl font-bold hover:bg-orange-50 transition">
+                        ดูรายละเอียด GigStay
+                    </button>
+                </div>
+
+                <!-- HR Talent -->
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition duration-300 group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-cyan-500 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-cyan-500/30 group-hover:scale-110 transition duration-300">
+                            <i data-lucide="users" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold">HR Talent</h3>
+                    </div>
+                    <p class="text-blue-100 mb-6 leading-relaxed min-h-[80px]">
+                        แพลตฟอร์มบริหารจัดการทรัพยากรบุคคล (HRM & HRD) ที่ทำให้การพัฒนาคนเป็นเรื่องง่าย มีระบบ ติดตาม Performance และ Career Path อย่างเป็นรูปธรรม
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3 py-1 rounded-full bg-white/20 text-sm text-white">Talent Management</span>
+                        <span class="px-3 py-1 rounded-full bg-white/20 text-sm text-white">Training Record</span>
+                        <span class="px-3 py-1 rounded-full bg-white/20 text-sm text-white">KPI/OKRs</span>
+                    </div>
+                    <button class="w-full py-3 bg-white text-blue-900 rounded-xl font-bold hover:bg-cyan-50 transition">
+                        ดูรายละเอียด HR Talent
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Footer -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">พร้อมให้เราเป็นเพื่อนคู่คิดทางธุรกิจของคุณหรือยัง?</h2>
+            <p class="text-slate-600 mb-10 text-lg">
+                ไม่ว่าจะเป็นงานที่ปรึกษา การอบรม หรือซอฟต์แวร์ เราพร้อมคุยกับคุณด้วยความจริงใจ <br class="hidden md:block">
+                ทักมาคุยกันก่อนได้ครับ เรายินดีให้คำแนะนำ
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
+                <a href="#" class="flex items-center gap-3 px-6 py-4 bg-green-500 hover:bg-green-600 text-white rounded-xl transition shadow-lg shadow-green-500/30 w-full md:w-auto justify-center">
+                    <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    <span class="font-bold text-lg">LINE: @myGigCompany</span>
+                </a>
+                <a href="tel:02-xxx-xxxx" class="flex items-center gap-3 px-6 py-4 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl transition w-full md:w-auto justify-center">
+                    <i data-lucide="phone" class="w-6 h-6"></i>
+                    <span class="font-bold text-lg">02-XXX-XXXX</span>
+                </a>
+            </div>
+
+            <div class="border-t border-slate-200 pt-8 mt-8">
+                <div class="flex justify-center items-center gap-2 text-slate-500 font-medium">
+                    <div class="w-8 h-8 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold text-sm">mG</div>
+                    <span>© 2024 myGig Company. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
